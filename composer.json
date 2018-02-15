@@ -1,0 +1,38 @@
+{
+    "name": "chromatichq/drush-build-commands",
+    "description": "Drush commands to aid in the build process.",
+    "type": "drupal-drush",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Adam Zimmermann",
+            "email": "adam@chromatichq.com",
+            "homepage": "https://chromatichq.com"
+        },
+        {
+            "name": "Mark Dorison",
+            "email": "mark@chromatichq.com",
+            "homepage": "https://chromatichq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "drush/drush": "^9.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~3"
+    },
+    "scripts": {
+        "phpcs": "./vendor/bin/phpcs --standard=PSR2 . --ignore='vendor'",
+        "test": [
+            "@phpcs"
+        ]
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^9"
+            }
+        }
+    }
+}

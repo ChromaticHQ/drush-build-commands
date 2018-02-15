@@ -1,0 +1,5 @@
+services:
+  drush-build-commands.commands:
+    class: \Drupal\drush-build-commands\Commands\BuildCommands
+    tags:
+      - { name: drush.command }

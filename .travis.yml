@@ -1,0 +1,19 @@
+sudo: false
+
+language: php
+
+php:
+- '7.1'
+
+env:
+  global:
+    - PATH="$PATH:$TRAVIS_BUILD_DIR/vendor/bin"
+
+before_install:
+  - composer self-update
+
+install:
+  - composer install
+
+script:
+  - composer test
