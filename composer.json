@@ -1,5 +1,5 @@
 {
-    "name": "chromatichq/drush_build_commands",
+    "name": "chromatichq/drush-build-commands",
     "description": "Drush commands to aid in the build process.",
     "type": "drupal-drush",
     "license": "GPL-2.0-or-later",
